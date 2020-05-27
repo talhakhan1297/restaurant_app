@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:restaurant_app/screens/burger.dart';
+import 'package:restaurant_app/screens/homePage.dart';
 import 'package:restaurant_app/style/theme.dart';
 
 void main() {
@@ -9,22 +11,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: MyHomePage(),
       theme: buildTheme(context),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => HomePage(),
+        '/burger': (context) => Burger(),
+      },
     );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key}) : super(key: key);
-
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold();
   }
 }

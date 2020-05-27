@@ -10,6 +10,7 @@ ThemeData buildTheme(BuildContext context) {
     accentColor: kBlack,
     highlightColor: kBlack,
     scaffoldBackgroundColor: kYellow,
+    buttonColor: kBlack,
     buttonTheme: kThemeLight.buttonTheme.copyWith(
       buttonColor: kBlack,
       textTheme: ButtonTextTheme.normal,
@@ -17,32 +18,37 @@ ThemeData buildTheme(BuildContext context) {
     textTheme: TextTheme(
       headline1: GoogleFonts.bebasNeue(
         fontSize: 18,
-        color: kWhite,
+        color: kBlack,
         fontWeight: FontWeight.w600,
       ),
       headline2: GoogleFonts.varelaRound(
+        fontSize: 20, // 16
+        color: kBlack,
+        fontWeight: FontWeight.w600,
+      ),
+      headline3: GoogleFonts.varelaRound(
         fontSize: 14, // 16
-        color: kWhite,
+        color: kBlack,
         fontWeight: FontWeight.w600,
       ),
       subtitle1: GoogleFonts.varelaRound(
-        fontSize: 14,
-        color: kWhite,
+        fontSize: 12,
+        color: kBlack.withOpacity(0.75),
         fontWeight: FontWeight.w300,
       ),
       subtitle2: GoogleFonts.varelaRound(
         fontSize: 12,
-        color: kWhite,
-        fontWeight: FontWeight.w500,
+        color: kBlack,
+        fontWeight: FontWeight.w600,
       ),
       bodyText1: GoogleFonts.varelaRound(
-        fontSize: 12,
+        fontSize: 14,
         color: kWhite,
-        fontWeight: FontWeight.w300,
+        fontWeight: FontWeight.w400,
       ),
       bodyText2: GoogleFonts.varelaRound(
         fontSize: 8,
-        color: kWhite,
+        color: kBlack,
         fontWeight: FontWeight.w400,
       ),
     ),
