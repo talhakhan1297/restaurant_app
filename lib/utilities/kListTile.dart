@@ -15,10 +15,10 @@ class KListTile extends StatefulWidget {
 
   final String title;
   final String subtitle;
-  final String unitPrice;
-  final String currentPrice;
+  final double unitPrice;
   final Widget counterWidget;
   final Widget extrasWidget;
+  double currentPrice = 0;
 
   @override
   _KListTileState createState() => _KListTileState();
@@ -27,6 +27,7 @@ class KListTile extends StatefulWidget {
 class _KListTileState extends State<KListTile> {
   @override
   Widget build(BuildContext context) {
+    // widget.currentPrice = widget.unitPrice * counter
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Card(
@@ -64,13 +65,13 @@ class _KListTileState extends State<KListTile> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    "Unit Price: " + widget.unitPrice,
+                    "Unit Price: \$" + widget.unitPrice.toString(),
                     style: Theme.of(context).textTheme.subtitle2,
                   ),
                   Padding(
                     padding: const EdgeInsets.only(right: 14),
                     child: Text(
-                      "Total Price: " + widget.currentPrice,
+                      "Total Price: \$" + widget.currentPrice.toString(),
                       style: Theme.of(context).textTheme.subtitle2,
                     ),
                   ),

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:restaurant_app/style/colors.dart';
 
+int counter = 0;
+
 class Counter extends StatefulWidget {
   Counter({Key key}) : super(key: key);
 
@@ -9,7 +11,6 @@ class Counter extends StatefulWidget {
 }
 
 class _CounterState extends State<Counter> {
-  int counter = 0;
   @override
   Widget build(BuildContext context) {
     return Row(

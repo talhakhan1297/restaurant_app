@@ -44,15 +44,19 @@ class _HomePageState extends State<HomePage> {
   }
 
   void onPressBurger() {
-    print("reached");
     Navigator.pushNamed(context, '/burger');
-    print("done");
+  }
+
+  void onPressPizza() {
+    Navigator.pushNamed(context, '/pizza');
+  }
+
+  void onPressDrinks() {
+    Navigator.pushNamed(context, '/drinks');
   }
 
   void onPressKBurger() {}
-  void onPressPizza() {}
   void onPressKPizza() {}
-  void onPressDrinks() {}
   void onPressReview() {}
   void onPressQR() {}
 

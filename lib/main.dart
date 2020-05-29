@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:restaurant_app/screens/burger.dart';
+import 'package:restaurant_app/screens/drinks.dart';
 import 'package:restaurant_app/screens/homePage.dart';
+import 'package:restaurant_app/screens/pizza.dart';
 import 'package:restaurant_app/style/theme.dart';
 
 void main() {
@@ -16,6 +18,8 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => HomePage(),
         '/burger': (context) => Burger(),
+        '/pizza': (context) => Pizza(),
+        '/drinks': (context) => Drinks(),
       },
     );
   }
